@@ -1,0 +1,1012 @@
+/* COLLECTION */
+
+* ,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f3efe6;
+  color: #1c1c1a;
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
+  max-width: 100vw;
+  font-family: "Sekuya", system-ui;
+  width: 100%;
+  margin: 0;
+  min-width: none;
+  overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  outline: 3px solid #b08d57;
+  outline-offset: 5px;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background-color: #b08d57;
+  color: #263a32;
+}
+
+/* NAVIGATION */
+
+.site-header {
+  width: 100%;
+  min-height: 88px;
+  padding: 20px clamp(22px, 6vw, 96px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: space-between;
+  gap: 28px;
+  background-color: #263a32;
+  color: #f3efe6;
+  border-bottom: 1px solid #263a32;
+}
+
+.logo,
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #f3efe6;
+  line-height: 1.2;
+}
+
+.logo span,
+.footer-logo span {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 50%;
+  color: #b08d57;
+}
+
+.site-header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(18px, 3vw, 42px);
+}
+
+.nav-link{
+  position: relative;
+  padding: 8px 0;
+  color: #f3efe6;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  transition: solid #f3efe6 0.2s ease;
+}
+
+.nav-link:hover
+.nav-link.active{
+  color:#263a32;
+}
+
+.nav-link.active::after {
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  height: 2px;
+  background-color: #b08d57;
+  content: "";
+}
+
+.header-label {
+  font-size: 9px;
+  letter-spacing: 1.6px;
+  text-align: right;
+  color: #f3efe6;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 24px;
+  color: #f3efe6;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+
+.button:hover {
+  background-color: #263a32;
+  border-color: #263a32;
+}
+
+.botton span {
+  font-size: 16px;
+}
+
+.button-light {
+  background: #d8cbb5;
+  border-color: #d8cbb5;
+  color: #263a32;
+}
+
+.button-light:hover {
+  background: #263a32;
+  border-color:#f3efe6;
+}
+
+/* MAIN*/
+
+.main h1 {
+font-size: clamp(28px, 5.8vw, 82px);
+line-height: 0.99;
+}
+
+.main h1 span,
+.bottom-section h2 em {
+ color: #263a32;
+ font-weight: 600;
+ font-style: italic;
+}
+
+.main {
+  min-height: 600px;
+  width: 100%;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 90px);
+  margin: 0 auto;
+  padding: 76px clamp(22px, 6vw, 96px) 84px;
+}
+
+.main-copy {
+min-width: 0;
+}
+
+.main-visual { 
+position: relative;
+min-width: none;
+width: 100%;
+}
+
+.image-frame {
+  position: relative;
+  width: 100%;
+  padding: 14px 14px 45px;
+  border:1px solid #263a32;
+  background: #f3efe6;
+}
+
+.main-image {
+ width: 100%;
+ height: auto;
+ aspect-ratio: 4/5;
+ object-fit: cover;
+ object-position: center;
+ background: #f3efe6;
+}
+
+.visual-index {
+  position: absolute;
+  top: -35px;
+  right: -12px;
+  color: #b08d57;
+  font-size: clamp(48px, 6vw, 76px);
+  font-style: italic;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 24px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  color: #263a32
+}
+
+.eyebrow-line {
+  display: inline-block;
+  width: 34px;
+  height: 2px;
+  background-color: #b08d57;
+}
+
+.main h1 {
+  margin: 30px 0 25px;
+  font-size: clamp(40px, 5.5vw, 82px);
+  overflow-wrap: break-word;
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -3px;
+}
+
+.main h1 span {
+  color: #263a32;
+  font-style: italic;
+}
+
+.main-description {
+  max-width: 420px;
+  margin: 27px 0 30px;
+  color: #5e5a52;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* Buttons */
+
+.button { 
+  display: inline-flex;
+  min-height: 54px;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 14px 21px;
+  background: #263a32;
+  border: 1px solid var(#263a32);
+  color: #f3efe6;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  transition:
+    background 200ms ease,
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+.botton span {
+  font-size: 20px;
+  color: #b08d57;
+  line-height: 1;
+}
+
+.button:hover {
+  background: #263a32;
+  border-color: #b08d57;
+  transform: translateY(-3px);
+  align-items: center;
+}
+
+/*IMAGE*/
+
+.main-image {
+  display: block;
+  position: relative;
+  padding: 20px 20px 55px;
+  min-width: 0;
+  border: 1px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-frame {
+  position: relative;
+  min-height: 400px;
+  padding: 16px 16px 48px;
+  border: 1px solid var(--line);
+  background:#e4ded2;
+}
+
+.introduction {
+  padding: 85px 12%;
+  display: grid;
+  grid-template-columns: 8.7fr 1.3fr;
+  gap: 70px;
+  background-color: #f3efe6;
+  border-top: 1px solid #e4ded2;
+}
+
+.intro-label {
+  padding-top: 12px;
+  color: #2d1900;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.intro-content h2 {
+  margin-bottom: 25px;
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -1px;
+}
+
+.intro-content h2 span {
+  color:#263a32;
+  font-style: italic;
+}
+
+.intro-content > p {
+  max-width: 350px;
+  margin-bottom: 25px;
+  color: #666158;
+  line-height: 1.9;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 5px;
+  border-bottom: #b08d57 1px solid;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.text-link span {
+  color: #2d1900;
+  font-size: 19px;
+  transition: transform 0.25s ease;
+}
+
+.text-link:hover span {
+  transform: translate(5px);
+}
+
+/* TABLE OF CONTENT*/
+
+.feature-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 34px;
+  padding: 48px clamp(22px, 7vw, 110px);
+  background-color: #d8cbb5;
+  border-top:1px solid #263a32;
+  border-bottom: 1px solid #263a32;
+}
+
+
+.feature {
+  min-width: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.feature-number {
+  padding-top: 4px;
+  color: #b08d57;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1px;
+}
+  
+.feature h2 {
+  margin-bottom: 0 0 8px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.feature p {
+  margin: 0;
+  color:#6b665d;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* BOTTOM CONTENT */
+
+.bottom-section {
+  min-height: 300px;
+  padding: 70px 22px 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #263a32;
+  color: #d8cbb5;
+  font-size: clamp(38px, 5vw 60px);
+  text-align: center;
+}
+
+.bottom-section .eyebrow {
+  justify-content: center;
+  color: #d8cbb5;
+}
+
+.bottom-section .eyebrow-line {
+  flex: 0 0 28px;
+  width: 28px;
+  height: 1px;
+  background-color: #b08d57;
+}
+
+.bottom-section h2 {
+  margin: 0 0 28px;
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+}
+
+.bottom-section .botton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin: 20px auto 0;
+}
+
+/* ANATOMY PAGE INTRO */
+
+.anatomy-page {
+  width: 100%;
+}
+
+.anatomy-intro {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 76px 24px 58px;
+  text-align: center;
+}
+
+.anatomy-intro.eyebrow { 
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.anatomy-intro h1 {
+  margin: 0 auto 20px;
+  font-size: clamp(38px, 5.5vw, 68px);
+  font-weight: 400;
+  letter-spacing: -2px;
+  line-height: 1.2
+}
+
+.anatomy-intro h1 em {
+  color: #263a32;
+  font-weight: 400;
+}
+
+.into-description {
+  max-width: 560px;
+  margin: 0 auto;
+  color: #d8cbb5;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* ANATOMY CARDS*/
+
+.parts-section {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px clamp(22px, 6vw, 96px) 90px;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+  padding-bottom: 18px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #263a32;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-heading p {
+  margin: 0;
+  color:#b08d57;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-align: right;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.part-card {
+  min-width: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #f3efe6;
+  border: 1px solid #263a32;
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.part-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgb(28 28 26/8%);
+}
+
+.part-image {
+  position: relative;
+  overflow: hidden;
+  background: #f3efe6;
+}
+
+.part-image img {
+  width: 100%;
+  height: clamp(220px, 29vw, 300px);
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.part-card:hover .part-image img {
+  transform: scale(1.035);
+}
+
+.part-number {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  min-width: 38px;
+  min-height: 38px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d8cbb5;
+  color: #263a32;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.part-info {
+  flex: 1;
+  padding: 25px clamp(18px, 2.5vw, 32px) 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.part-info h3 {
+  margin: 0 0 12px;
+  font-size: clamp(22px, 2.4vw, 30px);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.part-info p {
+  margin: 0 0 24px;
+  color:#1c1c1a;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.part-link {
+  margin-top: auto;
+  padding-bottom: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #b08d57;
+  color: #263a32;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+} 
+
+.part-link:hover {
+  color: #b08d57;
+}
+
+.part-link span {
+  font-size: 15px;
+}
+
+/* FOOTER */
+
+.site-footer {
+  min-height: 95px;
+  padding: 25px clamp(22px, 6vw, 96px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid var(--line);
+  background: #1c1c1a;
+  color: #d8cbb5;
+}
+
+.footer-logo {
+  font-size: 21px;
+}
+
+.site-footer p {
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/*ANATOMY PAGE*/
+
+.anatomy-page {
+  background-color: #e4ded2;
+  color: #263a32;
+}
+
+.anatomy-intro {
+  padding: 75px 8% 65px;
+  text-align: center;
+}
+
+.anatomy-intro.eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 12px;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+.anatomy-intro h1 {
+  max-width: 858px;
+  margin: 24px auto;
+  font-size: clamp(38px, 6vw, 72px);
+  line-height: 1.08;
+  font-weight: 500;
+}
+
+.anatomy-intro h1 em {
+  color:#b08d57;
+  font-weight: 400;
+}
+
+.into-description {
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+/*PARTS GRID*/
+
+.parts-section {
+  padding: 25px 8% 90px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  border-bottom: 1px solid rgba(24, 61, 50, 0.25);
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+}
+
+.section-heading h2 {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.section-heading p {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+/*CARDS*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 42px 28px;
+}
+
+.part-card {
+  min-width: none;
+}
+
+.part-image {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background-color: #e4ded2
+}
+
+.part-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4 ease;
+}
+
+.part-card:hover.part-image img {
+  transform: scale(1.04);
+}
+
+.part-number {
+  position:absolute;
+  top: 14px;
+  left: 14px;
+  padding: 8px 11px;
+  background-color: #263a32;
+  color: #d8cbb5;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.part-info {
+  padding: 28px 2px 0;
+}
+
+.part-info h3 {
+  margin: 0 0 12px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.part-info p {
+  max-width: 440px;
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.part-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e4ded2;
+  color: #263a32;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.part-link:hover {
+  color: #e4ded2;
+}
+
+.part-link span {
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+
+  .site-header {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+
+  .header-label {
+    display: none;
+  }
+
+  .main {
+    min-height: auto;
+    padding: 60px 32px 65px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 30px;
+  }
+}
+
+.main-copy {
+  width: 100%;
+}
+
+.main-visual {
+  width: 100%;
+}
+
+.main-image { 
+  aspect-ratio: 5/4;
+}
+
+.feature-strip {
+  padding: 38px 30px;
+  gap: 24px;
+}
+
+.feature {
+  gap: 12px;
+}
+
+.feature h2 {
+  font-size: 18px;
+}
+
+.parts-section {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.grid {
+  gap: 20px;
+}
+
+.part-image img {
+  height: 280px;
+}
+
+
+
+@media (max-width: 650px) {
+
+  .site-header {
+    min-height: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+  
+  .site-header nav {
+    gap: 18px;
+  }
+
+  .nav-link {
+    font-size: 9px;
+    letter-spacing: 0.8px;
+  }
+
+  .main {
+    padding: 48px 22px 54px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 45px;
+  }
+
+  .main h1 {
+    font-size: clamp(46px, 11vw, 64px);
+    letter-spacing: -2px;
+  }
+
+.eyebrow {
+  margin-bottom: 20px;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+  .main-description {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .main-visual {
+    width: 100%;
+  }
+
+  .image-frame {
+    padding: 9px 8px 40px;
+  }
+
+  .main-image {
+    aspect-ratio: 4/5;
+  }
+
+  .visual-index {
+    top: -25px;
+    right: -5px;
+    font-size: 54px;
+  }
+
+  .feature-strip {
+    padding: 36px 24px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .feature h2 {
+    font-size: 21px;
+  }
+
+  .bottom-section {
+    min-height: 260px;
+    padding: 55px 22px;
+  }
+
+  .bottom-section h2 {
+    font-size: 40px;
+  }
+
+.anatomy-intro {
+  padding: 55px 22px 42px;
+}
+
+.anatomy-intro h1 {
+  font-size: clamp(36px, 9vw, 50px);
+  letter-spacing: -1.5px;
+}
+
+
+ .intro-description {
+    font-size: 14px;
+  }
+
+  .parts-section {
+    padding: 10px 22px 60px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .section-heading h2 {
+    font-size: 21px;
+  }
+
+  .section-heading p {
+    text-align: left;
+  }
+
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .part-image img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .part-info {
+    padding: 22px;
+  }
+
+  .part-info h3 {
+    font-size: 26px;
+  }
+
+  .site-footer {
+    padding: 28px 22px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
